@@ -1,0 +1,107 @@
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url(../img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 20px;
+  flex-wrap: nowrap;
+}
+
+.weather, .main-name, .button-play {
+  min-height: 39px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.weather {
+  min-width: 151px;
+}
+
+@media (max-width: 1440px) {
+  body {
+    background: url(../img/1440.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 1440px) {
+  body {
+    background: url(../img/1440.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background: url(../img/1024.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: url(../img/768.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    max-width: 425px;
+  }
+
+  body {
+    background: url(../img/425.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
