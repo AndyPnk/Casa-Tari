@@ -82,6 +82,7 @@ $align-center: 0 auto;
     letter-spacing: 0em;
     text-align: center;
     color: white;
+    width: 100%;
 }    
 .second-part{
     font-family: Gilroy;
@@ -92,9 +93,51 @@ $align-center: 0 auto;
     letter-spacing: 0em;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
+.main{
+    max-width: 910px;
+    margin: 0 auto;
+    border: 1px blue solid;
+}
+.button {
+    position: relative;
+    width: 10%;
+    height: 50px;
+    background: #FC821E;
+    backdrop-filter: blur(10px);
+    border-radius: 29px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    div{
+       
+        margin: 0 auto;
 
+    }
+    &:hover{
+        background-color: white;
+        color: black;
+        img{
+            
+                background-color: black;
+            }
+        }
+    
+    
+  }
+  
+  
+  
+  
+  a {
+      color: white;
+        text-decoration: none;
+   
+  }
 
  
  

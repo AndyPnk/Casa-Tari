@@ -79,6 +79,7 @@ header {
   letter-spacing: 0em;
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 .second-part {
@@ -90,6 +91,42 @@ header {
   letter-spacing: 0em;
   text-align: center;
   color: white;
+  width: 100%;
+}
+
+.main {
+  max-width: 910px;
+  margin: 0 auto;
+  border: 1px blue solid;
+}
+
+.button {
+  position: relative;
+  width: 10%;
+  height: 50px;
+  background: #FC821E;
+  backdrop-filter: blur(10px);
+  border-radius: 29px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.button div {
+  margin: 0 auto;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.button:hover img {
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 1440px) {
