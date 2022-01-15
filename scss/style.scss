@@ -13,8 +13,12 @@ html {
     box-sizing: border-box;
     
   }
-  
-  
+header{
+    width: 100%;
+    height: 699px;
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+}
 * {
     box-sizing: inherit;
   
@@ -23,16 +27,7 @@ html {
       box-sizing: inherit;
     }
   }
-body{
-    background: url(../img/background.jpg) no-repeat center;
-    background-size: cover;
-    background-position: top;
-    
-    
-          
-    
 
-}
 $width-for-desktop : 1220px;
 $align-center: 0 auto;
 .wrapper {
@@ -47,6 +42,14 @@ $align-center: 0 auto;
    
 
 }
+.wrapper div img{
+    width: 100%;
+}
+.wrapper div{
+    width: auto;
+    height: auto;
+}
+
 .weather, .main-name, .button-play{
     min-height: 39px;
     min-width: 151px;
@@ -62,6 +65,7 @@ $align-center: 0 auto;
 
 .weather {
     min-width: 151px;
+    justify-content: start;
     
   }
 .header-item{
@@ -91,6 +95,7 @@ $align-center: 0 auto;
 }
 
 
+
  
  
  
@@ -106,13 +111,14 @@ $align-center: 0 auto;
  
  
  @media (max-width: 1440px){
-    body{
+    header{
         background: url(../img/1440.jpg) no-repeat center;
         background-size: cover;
-        background-position: top;
+        width: 100%;
+        height: 699px;
     }
     .weather, .main-name, .button-play{
-        margin: 0;
+        margin: 10px;
         padding: 0;
     }
     .wrapper{
@@ -122,10 +128,11 @@ $align-center: 0 auto;
     
 }
  @media (max-width: 1024px){
-    body{
+    header{
         background: url(../img/1024.jpg) no-repeat center;
         background-size: cover;
-        background-position: top;
+        width: 100%;
+        height: 699px;
     }
     .weather, .main-name, .button-play{
         margin: 0;
@@ -158,28 +165,35 @@ $align-center: 0 auto;
     }
  }
  @media (max-width: 768px){
-    body{
+    header{
         background: url(../img/768.jpg) no-repeat center;
         background-size: cover;
-        background-position: top;
+        width: 100%;
+        height: 699px;
     }
     .wrapper{
         max-width: 714px;
- }
+    }
+    
  
 }
  @media (max-width: 425px) {
-    body{
+    header{
         background: url(../img/425.jpg) no-repeat center;
         background-size: 100%;
-        background-position: center;
         width: 100%;
+        height: 550px;
+        background-position: top;
+        
+        
+        
     }
     .button-play{
         display: none;
     }
     .weather{
         order: 1;
+        justify-content: end;
     }
     
     .main-name{
@@ -189,6 +203,14 @@ $align-center: 0 auto;
     .first-part, .second-part{
        margin-left: 5px;
        margin-right: 5px;
+       font-size: 1em;
     
     }
- }
+} 
+@media (max-width: 455px){
+        .weather, .main-name, .button-play{
+            
+            min-width: auto;
+        }
+    }
+   
