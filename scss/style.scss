@@ -270,9 +270,9 @@ $align-center: 0 auto;
     
   }
  
- hr{
-     margin-top: 120px;
-     margin-bottom: 120px;
+ .line{
+     padding-top: 120px;
+     padding-bottom: 120px;
  }
  
  .afstanden{
@@ -332,7 +332,7 @@ $align-center: 0 auto;
     width: $width-for-desktop;
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     p{
         font-family: 'Gilroy-Regular';
         font-size: 20px;
@@ -343,13 +343,13 @@ $align-center: 0 auto;
     }
 }
 .afstanden-firsttitle{
-    width: 445px;
-    height: 50px;
+    width: 28%;
+    height: 100%;
    
 } 
 .afstanden-secondtitle{
-    width: 800px;
-    height: 50px;
+    width: auto;
+    height: 100%;
     margin-left: 20px;
   
 }
@@ -416,6 +416,12 @@ $align-center: 0 auto;
     .photo{
         height: 300px;
     }
+    .afstanden{
+        
+    }
+    .line {
+        margin-top: 250px;
+    }
  }
  @media (max-width: 768px){
     header{
@@ -477,12 +483,11 @@ $align-center: 0 auto;
         flex-wrap: wrap;
         padding-left: 20px;
         padding-right: 20px;
-        margin-top: 50px;
 
-        div{
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
+        
+    }
+    .line{
+        padding-bottom: 0;
     }
     .afstanden-firstpart, .afstanden-secondpart,
     .afstanden-threepart, .afstanden-fourpart{
