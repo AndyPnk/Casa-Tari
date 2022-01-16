@@ -103,7 +103,7 @@ $align-center: 0 auto;
 }
 .button {
     position: relative;
-    width: 10%;
+    width: 161px;
     height: 50px;
     background: #FC821E;
     backdrop-filter: blur(10px);
@@ -217,6 +217,9 @@ $align-center: 0 auto;
     .wrapper{
         max-width: 714px;
     }
+    .header-item{
+        padding-top: 0;
+    }
     
  
 }
@@ -246,8 +249,13 @@ $align-center: 0 auto;
     .first-part, .second-part{
        margin-left: 5px;
        margin-right: 5px;
-       font-size: 1em;
+       font-size: 30px;
+       
     
+    }
+    .header-item{
+        margin-top: 0;
+        
     }
 } 
 @media (max-width: 455px){
