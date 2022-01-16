@@ -264,7 +264,7 @@ $align-center: 0 auto;
    
   }
 
-  footer{
+  .upfooter{
     max-width: $width-for-desktop;
     margin: $align-center;
     
@@ -281,6 +281,7 @@ $align-center: 0 auto;
      //height: 249px;
      height: auto;
      width: auto;
+    
      
     li{
         display: flex;
@@ -302,7 +303,7 @@ $align-center: 0 auto;
  .afstanden-firstpart{
      width: 445px;
      height: 100%;
-     padding: 30px;
+     padding: 28px;
      background-color: #F7F7F7;
      
  }
@@ -354,8 +355,58 @@ $align-center: 0 auto;
   
 }
  
- 
- 
+ .movie{
+     width: 100%;
+     height: 1000px;
+     background:#53504B;
+     margin-top: 130px;
+     padding-top: 70px;
+ }
+ .title-for-movie{
+     display: flex;
+     max-width: $width-for-desktop;
+     margin: $align-center;
+     width: auto;
+     height: auto;
+     position: relative;
+     
+
+
+ }
+ .desk-t{
+     width: 30%;
+     height: 100%;
+     font-family: 'Gilroy-Regular';
+     font-size: 36px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 46px;
+     letter-spacing: 0em;
+     text-align: left;
+
+
+ }
+ .desk-d{
+    width: 70%;
+    height: 100%;
+    span{
+        color: white;
+        font-family: 'Gilroy-Regular';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 1px;
+        text-align: left;
+
+    }
+ }
+ .clr-w{
+    color: white;
+ }
+ .clr-p{
+    color: #A9A7A5;
+ }
  
  
  
@@ -416,11 +467,12 @@ $align-center: 0 auto;
     .photo{
         height: 300px;
     }
-    .afstanden{
-        
-    }
     .line {
         margin-top: 250px;
+    }
+    .title-for-movie{
+        padding-left: 20px;
+        padding-right: 20px;
     }
  }
  @media (max-width: 768px){
@@ -439,7 +491,15 @@ $align-center: 0 auto;
     .afstanden-secondpart{
         flex-wrap: wrap;
     }
-    
+    .title-for-movie{
+        flex-wrap: wrap;
+    }
+    .desk-t, .desk-d{
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
  
 }
  @media (max-width: 425px) {
@@ -510,7 +570,7 @@ $align-center: 0 auto;
         width: 80%;
         margin: 0 auto;
     }
-    footer{
+    .uppfooter{
         margin-top: 200px;
     }
     

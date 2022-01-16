@@ -239,7 +239,7 @@ a {
   text-align: left;
 }
 
-footer {
+.upfooter {
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -269,7 +269,7 @@ footer {
 .afstanden-firstpart {
   width: 445px;
   height: 100%;
-  padding: 30px;
+  padding: 28px;
   background-color: #F7F7F7;
 }
 
@@ -317,6 +317,58 @@ footer {
   width: auto;
   height: 100%;
   margin-left: 20px;
+}
+
+.movie {
+  width: 100%;
+  height: 1000px;
+  background: #53504B;
+  margin-top: 130px;
+  padding-top: 70px;
+}
+
+.title-for-movie {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.desk-t {
+  width: 30%;
+  height: 100%;
+  font-family: "Gilroy-Regular";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.desk-d {
+  width: 70%;
+  height: 100%;
+}
+.desk-d span {
+  color: white;
+  font-family: "Gilroy-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.clr-w {
+  color: white;
+}
+
+.clr-p {
+  color: #A9A7A5;
 }
 
 @media (max-width: 1440px) {
@@ -382,6 +434,11 @@ footer {
   .line {
     margin-top: 250px;
   }
+
+  .title-for-movie {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -401,6 +458,16 @@ footer {
 
   .afstanden-secondpart {
     flex-wrap: wrap;
+  }
+
+  .title-for-movie {
+    flex-wrap: wrap;
+  }
+
+  .desk-t, .desk-d {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
   }
 }
 @media (max-width: 425px) {
@@ -471,7 +538,7 @@ footer {
     margin: 0 auto;
   }
 
-  footer {
+  .uppfooter {
     margin-top: 200px;
   }
 }
