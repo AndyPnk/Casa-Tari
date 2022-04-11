@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1">
     <title>Casa Tari</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,7 +25,6 @@
                 </div>
                 </a>
         </div>
-    
         <div class="header-item">
         <h1><span class="first-part">Kom tot rust op Ibiza in het</span> <br> <span class="second-part">prachtige Sant Josep</span></h1>
         </div>
@@ -34,10 +34,6 @@
                        <div><span><img src="/img/svg/Vector.svg" alt=""> Direct boeken</span></div>
                     </div>
                 </a>
-                
-            
-        
-    
     </header>
    <main class="main">
     <h3>Casa Tari<br> <span>Genieten in Spaanse stijl</span></h3>
@@ -45,9 +41,9 @@
 <p>Op 5 min rijden ligt het strand van Cala Tarida, een super mooie baai met leuk familiestrand en helderblauw water. Ook er zijn verschillende restaurants in de baai waaronder Cotton Beach Club en Can Yucas. Beide erg aan te raden!</p>
 
         <div class="description-photo">
-                <div><span>Bekijk de foto’s</span></div>
+                <div><span class="txt-h">Bekijk de foto’s</span></div>
                 <div class="switch"><img src="/img/svg/switch.svg" alt=""></div>
-                <div><span class="txt-clr">Bekijk de locatie</span></div>
+                <div onclick="change();"><span class="txt-clr">Bekijk de locatie</span></div>
         </div>
         <div class="photo">
            <div class="pool">
@@ -58,14 +54,14 @@
            <div class="part">
                 <div class="trees">
                     <a href="/">
-                    <div><img src="/img/svg/glass.svg" alt=""></div>
+                        <div>
+                            <img src="/img/svg/glass.svg" alt="">
+                        </div>
                     </a>
                 </div>
                 <div class="gate"></div>
                 <div class="table"></div>
            </div>
-            
-
         </div>
 
         
@@ -78,28 +74,8 @@
    </div>
    
    <div class="upfooter">
-    <!--   
-    <div class="afstanden-title">
-        <div class="afstanden-firsttitle">
-            <p>Afstanden naar locaties</p>
-        </div>
-        <div class="afstanden-secondtitle">
-            <p>Voorzieningen van de casa</p>
-        </div>
-    </div>
-
--->
     <div class="afstanden">
-    
-       
-       
-       
-       
-       
-        <div class="afstanden-firstpart">
-                
-        
-
+    <div class="afstanden-firstpart">
            <ul>
                <li><img src="/img/svg/plane.svg" alt=""> <span>15 min van het vliegveld</span></li>
                <li><img src="/img/svg/build.svg" alt=""> <span>20 min van Ibiza stad</span></li>
@@ -108,10 +84,8 @@
                <li><img src="/img/svg/knife.svg" alt=""><span>5 min van diverse restaurants</span></li>
            </ul>
        </div>
-       
        <div class="afstanden-secondpart">
            <div class="afstanden-threepart">
-               
             <ul>
                 <li><img src="/img/svg/slaapkamers.svg" alt=""> <span>2x Slaapkamers</span></li>
                 <li><img src="/img/svg/badkamer.svg" alt=""> <span>1x Badkamer</span></li>
@@ -184,7 +158,6 @@
                         <textarea name="" id="" cols="30" rows="10" placeholder="Opmerking/vragen"></textarea>
                         <a href="#">
                             <div class="button">
-        
                                <div><span>Verstuur aanvraag</span></div>
                             </div>
                         </a>
@@ -194,7 +167,22 @@
         </div>
     </footer>
 
-   
+   <script>
+    $(".txt-clr").click(function(){
+        $(".txt-clr").hover(function(over) {
+    $(".pool").css('backgroundImage', 'url(/img/map.jpg)');
+    }, function() {});
+    });
+
+
+
+    $(document).ready(function(){
+        $(".txt-h").hover(function() {
+    $(".pool").css('backgroundImage', 'url(/img/pool.jpg)');
+    }, function() {});
+    });
+    </script>
+
 
 
 

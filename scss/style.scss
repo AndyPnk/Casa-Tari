@@ -8,21 +8,25 @@
 		url('../fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-html, body, ul, ol, li, form, fieldset, legend{
+html,
+body,
+ul, ol, li, form, fieldset, legend{
     margin: 0;
     padding: 0;
     border: 0;
 	font-size: 100%;
     font: inherit;
 	vertical-align: baseline;
-    }
+}
+
 ol, ul{
     list-style: none;
 }
+
 html {
     box-sizing: border-box;
-    
-  }
+}
+
 body{
     font-family: 'Gilroy-Regular';
 }
@@ -33,6 +37,7 @@ header{
     background: url(../img/background.jpg) no-repeat center;
     background-size: cover;
 }
+
 * {
     box-sizing: inherit;
   
@@ -40,7 +45,7 @@ header{
     &::after {
       box-sizing: inherit;
     }
-  }
+}
 
 $width-for-desktop : 1220px;
 $align-center: 0 auto;
@@ -393,7 +398,13 @@ footer{
         width: 50%;
         height: 100%;
         padding: 20px;
+        flex-wrap: wrap;
     }
+    .footer-item-input:last-child{
+        background: white;
+        border-radius: 15px;
+    }
+
 }
 .descr-input{
     width: 100%;
@@ -402,13 +413,14 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    font-family: Gilroy;
-    font-size: 24px;
+    font-family: 'Gilroy-Regular';
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+
 }
 .form-input{
     text-align: center;
@@ -418,6 +430,7 @@ footer{
     hr{
         margin-top: 30px;
     }
+    
     
 }
 .select-footer{
@@ -457,8 +470,10 @@ footer{
 
     }
     textarea{
+        padding-top: 20px;
         margin-top: 20px;
         width: 100%;
+        resize: none;
         
       
         
@@ -476,8 +491,7 @@ footer{
     font-weight: 600;
     line-height: 36px;
     letter-spacing: -0.5px;
-    text-align: left;
-
+    
 }
 .additional-desc{
     font-size: 15px;
@@ -592,6 +606,7 @@ footer{
         }
        
     }
+    
    
 
  }
@@ -622,15 +637,62 @@ footer{
     .vid{
         background: url(../img/movie768.jpg) no-repeat center;
     }
-    .footer-item-input:last-child{
-        .input-footer{
-            input{
-                width: 100%;
-            }
+    .select-footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        
+        
+        
+        select:first-child{
+            width: 100%;
         }
-       
-    }
+        select:last-child{
+            width: 100%;
+        }
 
+    }
+    .input-footer{
+        padding: 0;
+        input:first-child{
+            width: 100%;
+        }
+        
+
+    }
+    
+    .information-item{
+        display: block;
+        margin: $align-center;
+        
+    }
+    .descr-input{
+        padding: 0;
+        font-size: 14px;
+        flex-wrap: wrap;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        
+    }
+    .footer-item-input{
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .footer-item-input:first-child{
+        width: 100%;
+    }
+    .footer-item-input:last-child{
+        background: white;
+        border-radius: 15px;
+    }
  
 }
  @media (max-width: 425px) {
@@ -643,6 +705,14 @@ footer{
         
         
         
+    }
+    .information-item{
+        padding: 0;
+        padding-top: 50px;
+
+    }
+    .main-desc{
+        text-align: center;
     }
     .button-play{
         display: none;
@@ -707,6 +777,28 @@ footer{
     .vid{
         background: url(../img/movie425.svg) no-repeat center;
     }
+    .descr-input{
+        span{
+        padding: 0;
+        font-size: 15px;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        }
+    }
+    .footer-item{
+        width: 80%;
+    }
+    .footer-item-input{
+        text-align: center;
+    }
+    
+    
 
 }
 @media (max-width: 1160px){
@@ -721,7 +813,7 @@ footer{
     
         
         .footer-item-input{
-            width: 50%;
+            width: 75%;
             height: 100%;
             padding: 20px;
         
@@ -738,6 +830,7 @@ footer{
         margin: $align-center;
        
     }
+    
 }
 
 

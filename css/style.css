@@ -5,7 +5,9 @@
   src: url("../fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.ttf") format("truetype"), url("../fonts/gilroy-regular.svg#gilroy-regular") format("svg");
   /* Chrome < 4, Legacy iOS */
 }
-html, body, ul, ol, li, form, fieldset, legend {
+html,
+body,
+ul, ol, li, form, fieldset, legend {
   margin: 0;
   padding: 0;
   border: 0;
@@ -404,6 +406,11 @@ footer {
   width: 50%;
   height: 100%;
   padding: 20px;
+  flex-wrap: wrap;
+}
+.footer-item .footer-item-input:last-child {
+  background: white;
+  border-radius: 15px;
 }
 
 .descr-input {
@@ -413,11 +420,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  font-family: Gilroy;
-  font-size: 24px;
+  font-family: "Gilroy-Regular";
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -464,8 +471,10 @@ footer {
   margin-top: 20px;
 }
 .input-footer textarea {
+  padding-top: 20px;
   margin-top: 20px;
   width: 100%;
+  resize: none;
 }
 
 .information-item {
@@ -480,7 +489,6 @@ footer {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: -0.5px;
-  text-align: left;
 }
 
 .additional-desc {
@@ -621,8 +629,57 @@ footer {
     background: url(../img/movie768.jpg) no-repeat center;
   }
 
-  .footer-item-input:last-child .input-footer input {
+  .select-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .select-footer select:first-child {
     width: 100%;
+  }
+  .select-footer select:last-child {
+    width: 100%;
+  }
+
+  .input-footer {
+    padding: 0;
+  }
+  .input-footer input:first-child {
+    width: 100%;
+  }
+
+  .information-item {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .descr-input {
+    padding: 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .footer-item-input {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-item-input:first-child {
+    width: 100%;
+  }
+
+  .footer-item-input:last-child {
+    background: white;
+    border-radius: 15px;
   }
 }
 @media (max-width: 425px) {
@@ -632,6 +689,15 @@ footer {
     width: 100%;
     height: 550px;
     background-position: top;
+  }
+
+  .information-item {
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .main-desc {
+    text-align: center;
   }
 
   .button-play {
@@ -700,6 +766,26 @@ footer {
   .vid {
     background: url(../img/movie425.svg) no-repeat center;
   }
+
+  .descr-input span {
+    padding: 0;
+    font-size: 15px;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .footer-item {
+    width: 80%;
+  }
+
+  .footer-item-input {
+    text-align: center;
+  }
 }
 @media (max-width: 1160px) {
   .footer-item {
@@ -712,7 +798,7 @@ footer {
     flex-wrap: wrap;
   }
   .footer-item .footer-item-input {
-    width: 50%;
+    width: 75%;
     height: 100%;
     padding: 20px;
   }
